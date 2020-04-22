@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "cocogoose";
+  src: url(("./fonts/Cocogoose Pro Regular Trial.ttf"));
+}
+
 .box-size { box-sizing: border-box; }
 
 .auto-w { width: auto; }
