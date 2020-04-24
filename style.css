@@ -69,6 +69,7 @@
   padding-bottom: 20px;
 }
 
+/* Index main section classes */
 .main-hading-size { font-size: auto; }
 
 .secondary-heading-size { font-size: auto; }
@@ -117,16 +118,53 @@
 /* Info boxes classes */
 .main-program-container {
   --info-box-width: 100%;
-  --direction: row;
+  --direction: column;
   --content-justify: space-between;
   --content-align: center;
-  --text-alignment: left;
-  --inner-box-padding: 10px 15px;
+  --text-alignment: center;
+  --inner-box-padding: 20px 20px;
 }
 
-.info-paragraph { width: 50ch; }
+.info-paragraph { width: auto; }
 
-.info-title { font-size: 20px; }
+.info-title { font-size: 25px; }
+
+.title-border { position: relative; }
+
+.title-border::after {
+  background-color: #ec5242;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 50px;
+}
+
+.info-icon { font-size: 35px; }
+
+.info-link {
+  color: white;
+  background-color: #ec5242;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.info-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .info-link {
+    text-decoration: underline;
+    padding: 0;
+    background-color: rgba(211, 211, 211, 0);
+  }
+}
 
 @media (min-width: 1024px) {
   .main-program-container {
@@ -135,25 +173,27 @@
     --content-justify: start;
     --content-align: center;
     --text-alignment: center;
-    --inner-box-padding: 10px 15px;
+    --inner-box-padding: 30px 30px;
   }
 
   .info-paragraph { width: auto; }
+
+  .info-icon { font-size: 45px; }
 }
 
 .info-box { width: var(--info-box-width); }
 
 .inner-info-box {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
   flex-direction: var(--direction);
   justify-content: var(--content-justify);
   align-items: var(--content-align);
   text-align: var(--text-alignment);
   padding: var(--inner-box-padding);
 }
-
-.gray-bg-trns { background-color: rgba(211, 211, 211, 0.4); }
-
-.info-icon { font-size: 50px; }
+.gray-bg-trns { background-color: rgba(211, 211, 211, 0.2); }
 
 /* Speakers classes */
 .person-img {
