@@ -1,7 +1,10 @@
+/* General purpose classes */
 @font-face {
   font-family: "cocogoose";
   src: url(("./fonts/Cocogoose Pro Regular Trial.ttf"));
 }
+
+.overflow-hidden { overflow: hidden; }
 
 .font-cocogoose { font-family: "cocogoose", sans-serif; }
 
@@ -19,17 +22,11 @@
 
 .navi-link { color: #272a31; }
 
+.color-white { color: white; }
+
+.bg-black { background-color: #272a31; }
+
 .social-link { color: white; }
-
-.section-padding-x {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.section-padding-y {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 .social-link:hover {
   color: white;
@@ -53,7 +50,24 @@
 
 .w-500 { width: 399px !important; }
 
-.main-program-container { --info-box-width: 100%; }
+@media (min-width: 768px) {
+  .navi-shadow { box-shadow: 10px 5px 15px gray; }
+}
+
+@media (min-width: 1024px) {
+  .w-500 { width: 500px !important; }
+}
+
+/* Index general classes */
+.section-padding-x {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-padding-y {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .main-hading-size { font-size: auto; }
 
@@ -67,8 +81,6 @@
 }
 
 @media (min-width: 768px) {
-  .navi-shadow { box-shadow: 10px 5px 15px gray; }
-
   .section-padding-x {
     padding-left: 10%;
     padding-right: 10%;
@@ -78,8 +90,6 @@
     padding-top: 10%;
     padding-bottom: 10%;
   }
-
-  .main-program-container { --info-box-width: 33.33%; }
 
   .main-hading-size { font-size: 70px; }
 
@@ -94,13 +104,9 @@
 }
 
 @media (min-width: 1024px) {
-  .main-program-container { --info-box-width: 20%; }
-
-  .w-500 { width: 500px !important; }
-
   .section-padding-x {
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 12.5%;
+    padding-left: 12.5%;
   }
 
   .main-hading-size { font-size: 90px; }
@@ -108,10 +114,48 @@
   .secondary-heading-size { font-size: 60px; }
 }
 
-.info-box {
-  width: var(--info-box-width);
+/* Info boxes classes */
+.main-program-container {
+  --info-box-width: 100%;
+  --direction: row;
+  --content-justify: space-between;
+  --content-align: center;
+  --text-alignment: left;
+  --inner-box-padding: 10px 15px;
 }
 
+.info-paragraph { width: 50ch; }
+
+.info-title { font-size: 20px; }
+
+@media (min-width: 1024px) {
+  .main-program-container {
+    --info-box-width: 20%;
+    --direction: column;
+    --content-justify: start;
+    --content-align: center;
+    --text-alignment: center;
+    --inner-box-padding: 10px 15px;
+  }
+
+  .info-paragraph { width: auto; }
+}
+
+.info-box { width: var(--info-box-width); }
+
+.inner-info-box {
+  flex-direction: var(--direction);
+  justify-content: var(--content-justify);
+  align-items: var(--content-align);
+  text-align: var(--text-alignment);
+  padding: var(--inner-box-padding);
+}
+
+.gray-bg-trns { background-color: rgba(211, 211, 211, 0.4); }
+
+.info-icon { font-size: 50px; }
+
+/* Speakers classes */
 .person-img {
   width: 100px;
   height: 100px;
