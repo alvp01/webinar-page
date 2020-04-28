@@ -1,7 +1,7 @@
 /* General purpose classes */
 @font-face {
   font-family: "cocogoose";
-  src: url(("./fonts/Cocogoose Pro Regular Trial.ttf"));
+  src: url(("./fonts/Cocogoose-Pro-Regular-Trial.ttf"));
 }
 
 .overflow-hidden { overflow: hidden; }
@@ -234,6 +234,15 @@
   }
 
   .col-md-6 { width: 50% !important; }
+}
+
+/* Partner classes */
+.partner-img-container { width: 33%; }
+
+.partner-img { width: 100%; }
+
+@media (min-width: 1200px) {
+  .partner-img-container { width: 20%; }
 }
 
 /* Footer clases */
