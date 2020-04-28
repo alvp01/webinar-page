@@ -235,3 +235,27 @@
 
   .col-md-6 { width: 50% !important; }
 }
+
+/* Footer clases */
+.footer-img {
+  width: 120px;
+  height: 40px;
+}
+
+.footer-paragraph { font-size: 13px; }
+
+@media (min-width: 768px) {
+  .footer-img {
+    width: 150px;
+    height: 50px;
+  }
+
+  .footer-paragraph { font-size: 15px; }
+}
+
+@media (min-width: 1200px) {
+  .footer-img {
+    width: 200px;
+    height: 66px;
+  }
+}
