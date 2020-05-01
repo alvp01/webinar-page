@@ -39,9 +39,16 @@
 }
 
 .navi-btn {
+  color: #ec5242;
+  text-decoration: none;
   background-color: white;
   border: 5px solid #ec5242;
   padding: 10px 15px;
+}
+
+.navi-btn:hover {
+  color: #ec5242;
+  text-decoration: none;
 }
 
 .navi-responsive-menu { font-size: 30px; }
@@ -267,4 +274,82 @@
     width: 200px;
     height: 66px;
   }
+}
+
+/* Classes for the about page */
+.about-padding-x {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.about-heading { font-size: auto; }
+
+.heading-break { display: none; }
+
+.about-paragraph-container { width: auto; }
+
+.border-secondary { border-color: #d3d3d3 !important; }
+
+.about-logo { width: 210px; }
+
+.webinc-paragraph { width: auto; }
+
+.about-link {
+  color: #272a31;
+  text-decoration: underline;
+}
+
+.about-link:hover { color: #272a31; }
+
+.about-webinc-padding { padding: 20px 20px; }
+
+.img-overlay {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(236, 82, 66, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.img-text { font-size: 25px; }
+
+.about-technology { display: flex; }
+
+.about-footer-bg { background-color: white; }
+
+.about-footer-text { color: #272a31; }
+
+@media (min-width: 768px) {
+  .about-padding-x {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .about-heading { font-size: 50px; }
+
+  .about-technology { display: none; }
+
+  .about-footer-bg { background-color: #272a31; }
+
+  .about-footer-text { color: white; }
+
+  .about-logo { width: 320px; }
+}
+
+@media (min-width: 1200px) {
+  .about-padding-x {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+
+  .about-paragraph-container { width: 80%; }
+
+  .heading-break { display: inline; }
+
+  .webinc-paragraph { width: 60%; }
+
+  .img-text { font-size: 30px; }
 }
