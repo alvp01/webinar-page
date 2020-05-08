@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Tickets</title>
+  </head>
+  <body>
+    <div class="w-100 navi-shadow">
+      <nav class="d-md-flex navbar bg-dark tickets-padding-x justify-c-end">
+        <ul class="navbar-nav d-flex-row">
+          <li class="mr-md-4"> <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a> </li>
+          <li class="mr-md-4"> <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> </li>
+          <li class="mr-md-4"> <a href="#" class="social-link font-lato">Log in</a> </li>
+          <li> <a href="#" class="social-link font-lato">Promotions</a> </li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-light bg-light tickets-padding-x">
+        <a href="#" class="navbar-brand d-none d-md-block"> <img src="./img/project-logo-black.png" alt=""> </a>
+        <ul class="navbar-nav d-md-flex d-flex-row justify-content-between w-500">
+          <li><a class="navi-link align-self-center font-lato" href="./index.html">Home</a></li>
+          <li><a class="navi-link align-self-center font-lato" href="./about.html">About</a></li>
+          <li><a href="./index.html" class="navi-btn font-lato">WebInc Tech Home</a></li>
+        </ul>
+        <ul class="navbar-nav d-md-none">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#"><i class="fas fa-bars color-black navi-responsive-menu"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html" class="navi-link font-lato">Home</a></li>
+              <li><a href="./about.html" class="navi-link font-lato">About</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="container-fluid">
+      <div class="row tickets-padding-x">
+        <div class="col-12 display-flex d-flex-column align-i-center paddin-y-5 overflow-hidden">
+          <div class="w-100 title-border-orange margin-b-5 text-center">
+            <h1 class="font-cocogoose pb-2 h3">Pick your place</h1>
+          </div>
+          <div class="border border-secondary rounded-pill p-3 margin-b-5">
+            <p class="font-lato m-0"> <span class="color-orange m-0">&diams; <b>Step 1 </b> </span> &nbsp; Select your webinar schedule before we run out of places. </p>
+          </div>
+          <div class="tickets-table-container margin-b-5">
+            <table class="tickets-table">
+              <tr>
+                <th>Ticket</th>
+                <th>Day 1</th>
+                <th>Day 2</th>
+                <th>Special AI speech</th>
+              </tr>
+              <tr>
+                <th>Date</th>
+                <td>15.May (Fri)</td>
+                <td>16.May (Sat)</td>
+                <td>16.May (Sat)</td>
+              </tr>
+              <tr>
+                <th>Front end</th>
+                <td> <p class="color-orange">$5</p> <input type="radio" name="value1" id="value1"> </td>
+                <td> <p class="color-orange">$5</p> <input type="radio" name="value2" id="value2"> </td>
+                <td rowspan="2"> <p class="color-orange">$10</p> <input type="radio" name="value3" id="value3"> </td>
+              </tr>
+              <tr>
+                <th>Back end</th>
+                <td> <p class="color-orange">$5</p> <input type="radio" name="value1" id="value4"> </td>
+                <td> <p class="color-orange">$5</p> <input type="radio" name="value2" id="value5"> </td>
+              </tr>
+            </table>
+          </div>
+          <div class="div-romb mt-5 possition-relative margin-b-5">
+            <i class="fas fa-angle-down position-absolute arrow-down text-light"></i>
+          </div>
+          <div class="w-100 title-border-orange margin-b-5 text-center">
+            <h3 class="font-cocogoose pb-2">Proceed to payout</h3>
+          </div>
+          <a class="pay-btn font-cocogoose font-weight-bold text-center" href="#">PAYOUT</a>
+        </div>
+      </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3f24fd37b2.js" crossorigin="anonymous"></script>
+  </body>
+</html>
